@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin:*');
 header('Content-Type:application/json');
 
 try{
-$db = new PDO('mysql:host=localhost;dbname=shoppinglist;charset=utf8','root','');
+$db = new PDO('mysql:host=localhost;dbname=shoppinglist;charset=utf8','root',''); //kokeiltu root, herjaa
 $sql="select * from item";
 $query = $db->query($sql); //queryyn palautuu tulokset 
 $results = $query->fetchAll(PDO::FETCH_ASSOC);

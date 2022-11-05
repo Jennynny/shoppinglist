@@ -13,4 +13,5 @@ insert into item (description,amount) values ('Test item',1);
 /*insert into item (description,amount) values ('Banaani',2);
 
 insert into item (description,amount) values ('Vesimeloni',1);*/ 
-/*tätä kautta voisi lisätä suoraan tauluun jo luontivaiheessa*/
+
+/*tätä kautta voisi lisätä ns malliksi suoraan tauluun jo luontivaiheessa*/
