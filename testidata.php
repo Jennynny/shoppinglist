@@ -14,8 +14,9 @@ try{
  $db = new PDO('mysql:host=localhost;dbname=shoppinglist;charset=utf8','root',''); //kokeiltu root, herjaa
  $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
- $query = $db->prepare('insert into item(description) values(:description)');
+ $query = $db->prepare('insert into item(description, amount) values(:description, :amount)'); //tee tämmönen amount:lle (KOKEILU)
  $query->bindValue(':description',$description,PDO::PARAM_STR);
+ $query->bindValue(':amount',$amount,PDO::PARAM_INT); //tällä 'määrää' esille selaimessa?
  $query->execute(); 
 
  //$json = json_encode($results,JSON_PRETTY_PRINT);
