@@ -16,4 +16,4 @@ insert into item (description,amount) values ('Test item',33);
 
 insert into item (description,amount) values ('Test item',4);
 
-/*tätä kautta voisi lisätä testidataa suoraan tauluun jo luontivaiheessa*/
+/*tätä kautta voi lisätä testidataa suoraan tauluun jo luontivaiheessa*/
