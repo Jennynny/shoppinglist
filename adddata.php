@@ -28,4 +28,4 @@ try{
     print json_encode($error);
  }
 
-//toimii Postmanin kautta.
+//Testattu ja datan lisääminen toimii Postmanin kautta.
